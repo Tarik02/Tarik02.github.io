@@ -1,0 +1,111 @@
+head, body {
+	margin: 0;
+	padding: 0;
+	background: url(/assets/img/background.png);
+	font-size: 14px;
+}
+
+.content {
+	position: absolute;
+	left: 50%;
+	top: 55%;
+	transform: translate(-50%, -50%);
+	font-family: avenir-web, Avenir;
+}
+
+.circle {
+	margin: 0 auto;
+	margin-top: 2.5em;
+	width: 300px;
+	height: 300px;
+	position: relative;
+}
+
+.circle>a {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	display: block;
+	width: 55px;
+	height: 55px;
+	border-radius: 100%;
+	background-color: rgba(0, 0, 0, 0);
+	transition: background-color .2s;
+}
+
+.circle>a>i {
+	font-size: 2em;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	color: #555;
+	transition: color .2s;
+}
+
+.circle>a>.hover {
+	font-size: 1em;
+	background: white;
+	color: gray;
+	padding: 5px 10px;
+	opacity: 1;
+	visibility: hidden;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: opacity .4s;
+	white-space: nowrap;
+}
+
+.circle>a:hover {
+	background-color: var(--hover-background);
+}
+
+.circle>a:hover>i {
+	color: #fff;
+}
+
+.content img {
+	height: 300px;
+	width: 300px;
+	border: #fff solid 4px;
+	border-radius: 300px;
+	box-shadow: #c0c0c0 0px 0px 4px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+}
+
+.info {
+	color: #fff;
+	font-weight: normal;
+	text-align: center;
+}
+
+.name {
+	color: #fff;
+	font-size: 40px;
+	font-weight: normal;
+	padding-top: 2.5em;
+}
+
+.full-name {
+	color: #fff;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.description {
+	padding-top: 0.5em;
+	font-size: 1.4em;
+}
+
+.description, .description a {
+	color: #ccc;
+}
+
+.description p {
+	padding: 0;
+	margin: 0;
+	margin-top: 20px;
+}
